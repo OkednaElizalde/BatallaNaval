@@ -1,9 +1,9 @@
 const socket = io();
 
-let barcos = 3;
+let barcos = 10;
 let barcosIniciales = barcos;
 let vidas = barcos;
-let tirosacertados = 3;
+let tirosacertados = 10;
 let posiciones =[];
 let posicionesEnemigas=[];
 let turno = new Boolean(null);
