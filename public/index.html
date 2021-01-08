@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Batalla Naval</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+</head>
+<body >
+    <div class="container-fluid text-center">
+        <div class="row bg-dark text-light"><h1>Batalla Naval</h1></div>
+        <div class="row">
+            <div class="col ">
+                <div class="row bg-info text-light"><h3>Tú</h3></div>
+                <table class="table text-center ">
+                    <thead class="thead-dark"> 
+                        <th scope="col ">#</th>
+                        <th scope="col ">1</th>
+                        <th scope="col ">2</th>
+                        <th scope="col ">3</th>
+                        <th scope="col ">4</th>
+                        <th scope="col ">5</th>
+                        <th scope="col ">6</th>
+                        <th scope="col ">7</th>
+                        <th scope="col ">8</th>
+                        <th scope="col ">9</th>
+                        <th scope="col ">10</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <th scope="row" class="bg-dark text-light">A</th>
+                          <td class="bg-info"><button class="btn" id='A1' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='A1img'></button></td>
+                          <td class="bg-info"><button class="btn" id='A2' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='A2img'></button></td>
+                          <td class="bg-info"><button class="btn" id='A3' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='A3img'></button></td>
+                          <td class="bg-info"><button class="btn" id='A4' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='A4img'></button></td>
+                          <td class="bg-info"><button class="btn" id='A5' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='A5img'></button></td>
+                          <td class="bg-info"><button class="btn" id='A6' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='A6img'></button></td>
+                          <td class="bg-info"><button class="btn" id='A7' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='A7img'></button></td>
+                          <td class="bg-info"><button class="btn" id='A8' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='A8img'></button></td>
+                          <td class="bg-info"><button class="btn" id='A9' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='A9img'></button></td>
+                          <td class="bg-info"><button class="btn" id='A10' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='A10img'></button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="bg-dark text-light">B</th>
+                            <td class="bg-info"><button class="btn" id='B1' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='B1img'></button></td>
+                            <td class="bg-info"><button class="btn" id='B2' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='B2img'></button></td>
+                            <td class="bg-info"><button class="btn" id='B3' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='B3img'></button></td>
+                            <td class="bg-info"><button class="btn" id='B4' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='B4img'></button></td>
+                            <td class="bg-info"><button class="btn" id='B5' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='B5img'></button></td>
+                            <td class="bg-info"><button class="btn" id='B6' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='B6img'></button></td>
+                            <td class="bg-info"><button class="btn" id='B7' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='B7img'></button></td>
+                            <td class="bg-info"><button class="btn" id='B8' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='B8img'></button></td>
+                            <td class="bg-info"><button class="btn" id='B9' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='B9img'></button></td>
+                            <td class="bg-info"><button class="btn" id='B10' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='B10img'></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="bg-dark text-light">C</th>
+                            <td class="bg-info"><button class="btn" id='C1' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='C1img'></button></td>
+                            <td class="bg-info"><button class="btn" id='C2' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='C2img'></button></td>
+                            <td class="bg-info"><button class="btn" id='C3' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='C3img'></button></td>
+                            <td class="bg-info"><button class="btn" id='C4' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='C4img'></button></td>
+                            <td class="bg-info"><button class="btn" id='C5' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='C5img'></button></td>
+                            <td class="bg-info"><button class="btn" id='C6' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='C6img'></button></td>
+                            <td class="bg-info"><button class="btn" id='C7' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='C7img'></button></td>
+                            <td class="bg-info"><button class="btn" id='C8' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='C8img'></button></td>
+                            <td class="bg-info"><button class="btn" id='C9' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='C9img'></button></td>
+                            <td class="bg-info"><button class="btn" id='C10' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='C10img'></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="bg-dark text-light">D</th>
+                            <td class="bg-info"><button class="btn" id='D1' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='D1img'></button></td>
+                            <td class="bg-info"><button class="btn" id='D2' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='D2img'></button></td>
+                            <td class="bg-info"><button class="btn" id='D3' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='D3img'></button></td>
+                            <td class="bg-info"><button class="btn" id='D4' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='D4img'></button></td>
+                            <td class="bg-info"><button class="btn" id='D5' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='D5img'></button></td>
+                            <td class="bg-info"><button class="btn" id='D6' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='D6img'></button></td>
+                            <td class="bg-info"><button class="btn" id='D7' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='D7img'></button></td>
+                            <td class="bg-info"><button class="btn" id='D8' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='D8img'></button></td>
+                            <td class="bg-info"><button class="btn" id='D9' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='D9img'></button></td>
+                            <td class="bg-info"><button class="btn" id='D10' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='D10img'></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="bg-dark text-light">E</th>
+                            <td class="bg-info"><button class="btn" id='E1' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='E1img'></button></td>
+                            <td class="bg-info"><button class="btn" id='E2' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='E2img'></button></td>
+                            <td class="bg-info"><button class="btn" id='E3' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='E3img'></button></td>
+                            <td class="bg-info"><button class="btn" id='E4' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='E4img'></button></td>
+                            <td class="bg-info"><button class="btn" id='E5' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='E5img'></button></td>
+                            <td class="bg-info"><button class="btn" id='E6' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='E6img'></button></td>
+                            <td class="bg-info"><button class="btn" id='E7' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='E7img'></button></td>
+                            <td class="bg-info"><button class="btn" id='E8' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='E8img'></button></td>
+                            <td class="bg-info"><button class="btn" id='E9' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='E9img'></button></td>
+                            <td class="bg-info"><button class="btn" id='E10' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='E10img'></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="bg-dark text-light">F</th>
+                            <td class="bg-info"><button class="btn" id='F1' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='F1img'></button></td>
+                            <td class="bg-info"><button class="btn" id='F2' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='F2img'></button></td>
+                            <td class="bg-info"><button class="btn" id='F3' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='F3img'></button></td>
+                            <td class="bg-info"><button class="btn" id='F4' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='F4img'></button></td>
+                            <td class="bg-info"><button class="btn" id='F5' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='F5img'></button></td>
+                            <td class="bg-info"><button class="btn" id='F6' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='F6img'></button></td>
+                            <td class="bg-info"><button class="btn" id='F7' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='F7img'></button></td>
+                            <td class="bg-info"><button class="btn" id='F8' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='F8img'></button></td>
+                            <td class="bg-info"><button class="btn" id='F9' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='F9img'></button></td>
+                            <td class="bg-info"><button class="btn" id='F10' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='F10img'></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="bg-dark text-light">G</th>
+                            <td class="bg-info"><button class="btn" id='G1' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='G1img'></button></td>
+                            <td class="bg-info"><button class="btn" id='G2' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='G2img'></button></td>
+                            <td class="bg-info"><button class="btn" id='G3' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='G3img'></button></td>
+                            <td class="bg-info"><button class="btn" id='G4' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='G4img'></button></td>
+                            <td class="bg-info"><button class="btn" id='G5' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='G5img'></button></td>
+                            <td class="bg-info"><button class="btn" id='G6' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='G6img'></button></td>
+                            <td class="bg-info"><button class="btn" id='G7' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='G7img'></button></td>
+                            <td class="bg-info"><button class="btn" id='G8' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='G8img'></button></td>
+                            <td class="bg-info"><button class="btn" id='G9' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='G9img'></button></td>
+                            <td class="bg-info"><button class="btn" id='G10' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='G10img'></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="bg-dark text-light">H</th>
+                            <td class="bg-info"><button class="btn" id='H1' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='H1img'></button></td>
+                            <td class="bg-info"><button class="btn" id='H2' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='H2img'></button></td>
+                            <td class="bg-info"><button class="btn" id='H3' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='H3img'></button></td>
+                            <td class="bg-info"><button class="btn" id='H4' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='H4img'></button></td>
+                            <td class="bg-info"><button class="btn" id='H5' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='H5img'></button></td>
+                            <td class="bg-info"><button class="btn" id='H6' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='H6img'></button></td>
+                            <td class="bg-info"><button class="btn" id='H7' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='H7img'></button></td>
+                            <td class="bg-info"><button class="btn" id='H8' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='H8img'></button></td>
+                            <td class="bg-info"><button class="btn" id='H9' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='H9img'></button></td>
+                            <td class="bg-info"><button class="btn" id='H10' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='H10img'></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="bg-dark text-light">I</th>
+                            <td class="bg-info"><button class="btn" id='I1' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='I1img'></button></td>
+                            <td class="bg-info"><button class="btn" id='I2' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='I2img'></button></td>
+                            <td class="bg-info"><button class="btn" id='I3' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='I3img'></button></td>
+                            <td class="bg-info"><button class="btn" id='I4' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='I4img'></button></td>
+                            <td class="bg-info"><button class="btn" id='I5' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='I5img'></button></td>
+                            <td class="bg-info"><button class="btn" id='I6' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='I6img'></button></td>
+                            <td class="bg-info"><button class="btn" id='I7' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='I7img'></button></td>
+                            <td class="bg-info"><button class="btn" id='I8' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='I8img'></button></td>
+                            <td class="bg-info"><button class="btn" id='I9' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='I9img'></button></td>
+                            <td class="bg-info"><button class="btn" id='I10' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='I10img'></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="bg-dark text-light">J</th>
+                            <td class="bg-info"><button class="btn" id='J1' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='J1img'></button></td>
+                            <td class="bg-info"><button class="btn" id='J2' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='J2img'></button></td>
+                            <td class="bg-info"><button class="btn" id='J3' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='J3img'></button></td>
+                            <td class="bg-info"><button class="btn" id='J4' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='J4img'></button></td>
+                            <td class="bg-info"><button class="btn" id='J5' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='J5img'></button></td>
+                            <td class="bg-info"><button class="btn" id='J6' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='J6img'></button></td>
+                            <td class="bg-info"><button class="btn" id='J7' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='J7img'></button></td>
+                            <td class="bg-info"><button class="btn" id='J8' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='J8img'></button></td>
+                            <td class="bg-info"><button class="btn" id='J9' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='J9img'></button></td>
+                            <td class="bg-info"><button class="btn" id='J10' onclick="ObtenerCoordenada(this)"><img src="olas.png" id='J10img'></button></td>
+                          </tr>
+                      </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <div class="row bg-danger text-light "><h3>Oponente</h3></div>
+                <table class="table text-center table">
+                    <thead class="thead-dark"> 
+                        <th scope="col ">#</th>
+                        <th scope="col ">1</th>
+                        <th scope="col ">2</th>
+                        <th scope="col ">3</th>
+                        <th scope="col ">4</th>
+                        <th scope="col ">5</th>
+                        <th scope="col ">6</th>
+                        <th scope="col ">7</th>
+                        <th scope="col ">8</th>
+                        <th scope="col ">9</th>
+                        <th scope="col ">10</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <th scope="row" class="bg-dark text-light">A</th>
+                          <td class="bg-info"><button class="btn" id='A1Z' onclick="Tirar(this)"><img src="pregunta.png" id='A1Zimg'></button></td>
+                          <td class="bg-info"><button class="btn" id='A2Z' onclick="Tirar(this)"><img src="pregunta.png" id='A2Zimg'></button></td>
+                          <td class="bg-info"><button class="btn" id='A3Z' onclick="Tirar(this)"><img src="pregunta.png" id='A3Zimg'></button></td>
+                          <td class="bg-info"><button class="btn" id='A4Z' onclick="Tirar(this)"><img src="pregunta.png" id='A4Zimg'></button></td>
+                          <td class="bg-info"><button class="btn" id='A5Z' onclick="Tirar(this)"><img src="pregunta.png" id='A5Zimg'></button></td>
+                          <td class="bg-info"><button class="btn" id='A6Z' onclick="Tirar(this)"><img src="pregunta.png" id='A6Zimg'></button></td>
+                          <td class="bg-info"><button class="btn" id='A7Z' onclick="Tirar(this)"><img src="pregunta.png" id='A7Zimg'></button></td>
+                          <td class="bg-info"><button class="btn" id='A8Z' onclick="Tirar(this)"><img src="pregunta.png" id='A8Zimg'></button></td>
+                          <td class="bg-info"><button class="btn" id='A9Z' onclick="Tirar(this)"><img src="pregunta.png" id='A9Zimg'></button></td>
+                          <td class="bg-info"><button class="btn" id='A10Z' onclick="Tirar(this)"><img src="pregunta.png" id='A10Zimg'></button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="bg-dark text-light">B</th>
+                            <td class="bg-info"><button class="btn" id='B1Z' onclick="Tirar(this)"><img src="pregunta.png" id='B1Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='B2Z' onclick="Tirar(this)"><img src="pregunta.png" id='B2Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='B3Z' onclick="Tirar(this)"><img src="pregunta.png" id='B3Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='B4Z' onclick="Tirar(this)"><img src="pregunta.png" id='B4Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='B5Z' onclick="Tirar(this)"><img src="pregunta.png" id='B5Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='B6Z' onclick="Tirar(this)"><img src="pregunta.png" id='B6Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='B7Z' onclick="Tirar(this)"><img src="pregunta.png" id='B7Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='B8Z' onclick="Tirar(this)"><img src="pregunta.png" id='B8Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='B9Z' onclick="Tirar(this)"><img src="pregunta.png" id='B9Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='B10Z' onclick="Tirar(this)"><img src="pregunta.png" id='B10Zimg'></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="bg-dark text-light">C</th>
+                            <td class="bg-info"><button class="btn" id='C1Z' onclick="Tirar(this)"><img src="pregunta.png" id='C1Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='C2Z' onclick="Tirar(this)"><img src="pregunta.png" id='C2Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='C3Z' onclick="Tirar(this)"><img src="pregunta.png" id='C3Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='C4Z' onclick="Tirar(this)"><img src="pregunta.png" id='C4Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='C5Z' onclick="Tirar(this)"><img src="pregunta.png" id='C5Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='C6Z' onclick="Tirar(this)"><img src="pregunta.png" id='C6Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='C7Z' onclick="Tirar(this)"><img src="pregunta.png" id='C7Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='C8Z' onclick="Tirar(this)"><img src="pregunta.png" id='C8Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='C9Z' onclick="Tirar(this)"><img src="pregunta.png" id='C9Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='C10Z' onclick="Tirar(this)"><img src="pregunta.png" id='C10Zimg'></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="bg-dark text-light">D</th>
+                            <td class="bg-info"><button class="btn" id='D1Z' onclick="Tirar(this)"><img src="pregunta.png" id='D1Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='D2Z' onclick="Tirar(this)"><img src="pregunta.png" id='D2Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='D3Z' onclick="Tirar(this)"><img src="pregunta.png" id='D3Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='D4Z' onclick="Tirar(this)"><img src="pregunta.png" id='D4Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='D5Z' onclick="Tirar(this)"><img src="pregunta.png" id='D5Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='D6Z' onclick="Tirar(this)"><img src="pregunta.png" id='D6Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='D7Z' onclick="Tirar(this)"><img src="pregunta.png" id='D7Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='D8Z' onclick="Tirar(this)"><img src="pregunta.png" id='D8Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='D9Z' onclick="Tirar(this)"><img src="pregunta.png" id='D9Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='D10Z' onclick="Tirar(this)"><img src="pregunta.png" id='D10Zimg'></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="bg-dark text-light">E</th>
+                            <td class="bg-info"><button class="btn" id='E1Z' onclick="Tirar(this)"><img src="pregunta.png" id='E1Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='E2Z' onclick="Tirar(this)"><img src="pregunta.png" id='E2Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='E3Z' onclick="Tirar(this)"><img src="pregunta.png" id='E3Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='E4Z' onclick="Tirar(this)"><img src="pregunta.png" id='E4Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='E5Z' onclick="Tirar(this)"><img src="pregunta.png" id='E5Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='E6Z' onclick="Tirar(this)"><img src="pregunta.png" id='E6Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='E7Z' onclick="Tirar(this)"><img src="pregunta.png" id='E7Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='E8Z' onclick="Tirar(this)"><img src="pregunta.png" id='E8Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='E9Z' onclick="Tirar(this)"><img src="pregunta.png" id='E9Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='E10Z' onclick="Tirar(this)"><img src="pregunta.png" id='E10Zimg'></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="bg-dark text-light">F</th>
+                            <td class="bg-info"><button class="btn" id='F1Z' onclick="Tirar(this)"><img src="pregunta.png" id='F1Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='F2Z' onclick="Tirar(this)"><img src="pregunta.png" id='F2Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='F3Z' onclick="Tirar(this)"><img src="pregunta.png" id='F3Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='F4Z' onclick="Tirar(this)"><img src="pregunta.png" id='F4Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='F5Z' onclick="Tirar(this)"><img src="pregunta.png" id='F5Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='F6Z' onclick="Tirar(this)"><img src="pregunta.png" id='F6Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='F7Z' onclick="Tirar(this)"><img src="pregunta.png" id='F7Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='F8Z' onclick="Tirar(this)"><img src="pregunta.png" id='F8Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='F9Z' onclick="Tirar(this)"><img src="pregunta.png" id='F9Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='F10Z' onclick="Tirar(this)"><img src="pregunta.png" id='F10Zimg'></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="bg-dark text-light">G</th>
+                            <td class="bg-info"><button class="btn" id='G1Z' onclick="Tirar(this)"><img src="pregunta.png" id='G1Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='G2Z' onclick="Tirar(this)"><img src="pregunta.png" id='G2Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='G3Z' onclick="Tirar(this)"><img src="pregunta.png" id='G3Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='G4Z' onclick="Tirar(this)"><img src="pregunta.png" id='G4Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='G5Z' onclick="Tirar(this)"><img src="pregunta.png" id='G5Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='G6Z' onclick="Tirar(this)"><img src="pregunta.png" id='G6Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='G7Z' onclick="Tirar(this)"><img src="pregunta.png" id='G7Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='G8Z' onclick="Tirar(this)"><img src="pregunta.png" id='G8Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='G9Z' onclick="Tirar(this)"><img src="pregunta.png" id='G9Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='G10Z' onclick="Tirar(this)"><img src="pregunta.png" id='G10Zimg'></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="bg-dark text-light">H</th>
+                            <td class="bg-info"><button class="btn" id='H1Z' onclick="Tirar(this)"><img src="pregunta.png" id='H1Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='H2Z' onclick="Tirar(this)"><img src="pregunta.png" id='H2Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='H3Z' onclick="Tirar(this)"><img src="pregunta.png" id='H3Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='H4Z' onclick="Tirar(this)"><img src="pregunta.png" id='H4Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='H5Z' onclick="Tirar(this)"><img src="pregunta.png" id='H5Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='H6Z' onclick="Tirar(this)"><img src="pregunta.png" id='H6Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='H7Z' onclick="Tirar(this)"><img src="pregunta.png" id='H7Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='H8Z' onclick="Tirar(this)"><img src="pregunta.png" id='H8Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='H9Z' onclick="Tirar(this)"><img src="pregunta.png" id='H9Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='H10Z' onclick="Tirar(this)"><img src="pregunta.png" id='H10Zimg'></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="bg-dark text-light">I</th>
+                            <td class="bg-info"><button class="btn" id='I1Z' onclick="Tirar(this)"><img src="pregunta.png" id='I1Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='I2Z' onclick="Tirar(this)"><img src="pregunta.png" id='I2Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='I3Z' onclick="Tirar(this)"><img src="pregunta.png" id='I3Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='I4Z' onclick="Tirar(this)"><img src="pregunta.png" id='I4Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='I5Z' onclick="Tirar(this)"><img src="pregunta.png" id='I5Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='I6Z' onclick="Tirar(this)"><img src="pregunta.png" id='I6Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='I7Z' onclick="Tirar(this)"><img src="pregunta.png" id='I7Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='I8Z' onclick="Tirar(this)"><img src="pregunta.png" id='I8Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='I9Z' onclick="Tirar(this)"><img src="pregunta.png" id='I9Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='I10Z' onclick="Tirar(this)"><img src="pregunta.png" id='I10Zimg'></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row" class="bg-dark text-light">J</th>
+                            <td class="bg-info"><button class="btn" id='J1Z' onclick="Tirar(this)"><img src="pregunta.png" id='J1Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='J2Z' onclick="Tirar(this)"><img src="pregunta.png" id='J2Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='J3Z' onclick="Tirar(this)"><img src="pregunta.png" id='J3Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='J4Z' onclick="Tirar(this)"><img src="pregunta.png" id='J4Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='J5Z' onclick="Tirar(this)"><img src="pregunta.png" id='J5Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='J6Z' onclick="Tirar(this)"><img src="pregunta.png" id='J6Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='J7Z' onclick="Tirar(this)"><img src="pregunta.png" id='J7Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='J8Z' onclick="Tirar(this)"><img src="pregunta.png" id='J8Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='J9Z' onclick="Tirar(this)"><img src="pregunta.png" id='J9Zimg'></button></td>
+                            <td class="bg-info"><button class="btn" id='J10Z' onclick="Tirar(this)"><img src="pregunta.png" id='J10Zimg'></button></td>
+                          </tr>
+                      </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src='juego.js'></script>
+</body>
+</html>
